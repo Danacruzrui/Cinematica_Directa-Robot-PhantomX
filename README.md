@@ -7,9 +7,10 @@ https://user-images.githubusercontent.com/53317895/194696987-a6741fa5-e7da-409d-
 
 ## PhantomX Pincher 
 Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de cuatro articulaciones rotacionales y el accionamiento de una pinza dispuesta como herramienta 
+<p align="center"><img height=300 src="./Multimedia_lab4/phantomx-pincher-programmable-robotic-arm.jpg" alt="Menu" /></p>
 
 ### Especificaciones
-
+<p align="center"><img height=300 src="./Multimedia_lab4/phantomx-pincher.jpg" alt="Menu" /></p>
 ### Diagrama (sistemas de referencia) 
 
 ### Parametros Denavid H 
