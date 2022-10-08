@@ -17,7 +17,7 @@ Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de
 ### Parámetros Denavit-Hartenberg (DH) 
 <div align="center">
 
-| $\mathbf{i}$ | $\mathbf{\theta_i}$ | $\mathbf{d_i}$ | $\mathbf{a_i}$ | $\mathbf{\alpha_i}$ |$\mathbf{\offset_i}$ |
+| $\mathbf{i}$ | $\mathbf{\theta_i}$ | $\mathbf{d_i}$ | $\mathbf{a_i}$ | $\mathbf{\alpha_i}$ |$\mathbf{offset_i}$ |
 |:------------:|:-------------------:|:--------------:|:--------------:|:-------------------:|:-------------------:|
 |      $1$     |         $q_1$       |      $L_1$     |       $0$      |   $-\frac{\pi}{2}$  |         $0$         |
 |      $2$     |         $q_2$       |       $0$      |      $L_2$     |         $0$         |   $-\frac{\pi}{2}$  |
@@ -33,8 +33,19 @@ Se realiza un cambio de pose a partir de la variación articular
 
 ### Posición 1 (HOME)  [0, 0, 0, 0, 0]
 <p align="center"><img height=300 src="./Multimedia_lab4/1b.jpeg" alt="Menu" /></p>
+
 ### Posición 2  [-20, 20, -20, 20, 0]
+<p align="center"><img height=300 src="./Multimedia_lab4/2b.jpeg" alt="Menu" /></p>
+
 ### Posición 3  [ 30,-30, 30, -30, 0]
+<p align="center"><img height=300 src="./Multimedia_lab4/3b.jpeg" alt="Menu" /></p>
+
 ### Posición 4  [-90, 15, -55, 17, 0]
+<p align="center"><img height=300 src="./Multimedia_lab4/4b.jpeg" alt="Menu" /></p>
+
 ### Posición 5  [-90, 45, -55, 45, 10]
-### Posición 6  (Guardar) 
+<p align="center"><img height=300 src="./Multimedia_lab4/5b.jpeg" alt="Menu" /></p>
+
+### Posición X  (Guardar) 
+
+<p align="center"><img height=300 src="./Multimedia_lab4/9b.jpeg" alt="Menu" /></p>
