@@ -11,16 +11,29 @@ Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de
 
 ### Especificaciones
 <p align="center"><img height=300 src="./Multimedia_lab4/phantomx-pincher.jpg" alt="Menu" /></p>
+
 ### Diagrama (sistemas de referencia) 
 
-### Parametros Denavid H 
+### Parámetros Denavit-Hartenberg (DH) 
 <div align="center">
 
-| $\mathbf{i}$ | $\mathbf{\theta_i}$ | $\mathbf{d_i}$ | $\mathbf{a_i}$ | $\mathbf{\alpha_i}$ |
-|:------------:|:-------------------:|:--------------:|:--------------:|:-------------------:|
-|      $1$     |         $q_1$       |      $L_1$     |       $0$      |   $-\frac{\pi}{2}$  |
-|      $2$     |         $q_2$       |       $0$      |      $L_r$     |         $0$         |
-|      $3$     |         $q_3$       |       $0$      |      $L_3$     |         $0$         |
-|      $4$     |         $q_4$       |       $0$      |      $L_4$     |         $0$         |
+| $\mathbf{i}$ | $\mathbf{\theta_i}$ | $\mathbf{d_i}$ | $\mathbf{a_i}$ | $\mathbf{\alpha_i}$ |$\mathbf{\offset_i}$ |
+|:------------:|:-------------------:|:--------------:|:--------------:|:-------------------:|:-------------------:|
+|      $1$     |         $q_1$       |      $L_1$     |       $0$      |   $-\frac{\pi}{2}$  |         $0$         |
+|      $2$     |         $q_2$       |       $0$      |      $L_2$     |         $0$         |   $-\frac{\pi}{2}$  |
+|      $3$     |         $q_3$       |       $0$      |      $L_3$     |         $0$         |         $0$         |
+|      $4$     |         $q_4$       |       $0$      |      $L_4$     |         $0$         |         $0$         |
 
 </div>
+
+
+## Cambio de pose
+
+Se realiza un cambio de pose a partir de la variación articular 
+
+### Posición 1 (HOME)  [0, 0, 0, 0, 0.]
+### Posición 2  [-20, 20, -20, 20, 0.]
+### Posición 3  [ 30,-30, 30, -30, 0.]
+### Posición 4  [-90, 15, -55, 17, 0.]
+### Posición 5  [-90, 45, -55, 45, 10.]
+### Posición 6  (Guardar) 
