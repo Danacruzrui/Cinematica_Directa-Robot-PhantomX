@@ -49,3 +49,24 @@ Se realiza un cambio de pose a partir de la variación articular
 ### Posición X  (Guardar) 
 
 <p align="center"><img height=300 src="./Multimedia_lab4/9b.jpeg" alt="Menu" /></p>
+
+
+## Matlab
+```matlab
+syms q1 q2 q3 q4 ; 
+tetha= [q1, q2, q3, q4]; d=[42,0,0,0];%  entre xi-1 y xi a lo largo de zi-1
+alpha= [-pi/2, 0 , 0, 0];  a= [0, 104, 104 , 90 ];%entre zi-1 y zi a lo largo de xi.
+
+L(1) = Link('revolute','alpha',alpha(1),'a',a(1),'d',d(1));
+L(2) = Link('revolute','alpha',alpha(2),'a',a(2),'d',d(2),'offset', -pi/2);
+L(3) = Link('revolute','alpha',alpha(3),'a',a(3),'d',d(3));
+L(4) = Link('revolute','alpha',alpha(4),'a',a(4),'d',d(4));
+
+
+figure
+subplot(2,3,1)
+PhantomX = SerialLink(L,'name','PhantomX');
+PhantomX.plot([deg2rad(0) deg2rad(0)  deg2rad(0) deg2rad(0)],'notiles','noname'); % Pose #1 (HOME)
+xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
+```
+## Python
