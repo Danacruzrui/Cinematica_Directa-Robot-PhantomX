@@ -31,9 +31,10 @@ Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de
 
 Se realiza un cambio de pose a partir de la variación articular 
 
-### Posición 1 (HOME)  [0, 0, 0, 0, 0.]
-### Posición 2  [-20, 20, -20, 20, 0.]
-### Posición 3  [ 30,-30, 30, -30, 0.]
-### Posición 4  [-90, 15, -55, 17, 0.]
-### Posición 5  [-90, 45, -55, 45, 10.]
+### Posición 1 (HOME)  [0, 0, 0, 0, 0]
+<p align="center"><img height=300 src="./Multimedia_lab4/1b.jpeg" alt="Menu" /></p>
+### Posición 2  [-20, 20, -20, 20, 0]
+### Posición 3  [ 30,-30, 30, -30, 0]
+### Posición 4  [-90, 15, -55, 17, 0]
+### Posición 5  [-90, 45, -55, 45, 10]
 ### Posición 6  (Guardar) 
