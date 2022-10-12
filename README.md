@@ -28,6 +28,11 @@ Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de
 
 </div>
 
+* L_1 = 42 mm
+* L_2 = 104 mm
+* L_3 = 104 mm
+* L_4 = 90 mm
+
 
 ## Cambio de pose
 
