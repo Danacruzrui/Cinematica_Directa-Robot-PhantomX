@@ -78,7 +78,16 @@ PhantomX.plot([deg2rad(0) deg2rad(0)  deg2rad(0) deg2rad(0)],'notiles','noname')
 xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
 ```
 ## Python
-  Para lograr manipular el Robot Phincher, se desarrolla un script en python basado en los scripts contenidos en el repositorio de Felipe Gonzalez [dynamixel_one_motor](https://github.com/fegonzalez7/dynamixel_one_motor.git). Este nuevo Script lleva como nombre [CP_Lab4.py](https://github.com/Danacruzrui/Lab4_Cinematica_Directa-PhantomX/blob/8ec12ad38b18fb7f0409b6129dc0f76efed332bb/dynamixel_one_motor-master/scripts/CP_Lab4.py) , en él se genera una comunicación activa desde la terminal hasta el robot, especificamente hasta cada articulación (motor) que lo componen, para el caso del pincher se trata de 4 articulaciones rotacionales y un motor que controla el movimiento de la herramienta 
+  Para lograr manipular el Robot Phincher, se desarrolla un script en python basado en los scripts contenidos en el repositorio de Felipe Gonzalez [dynamixel_one_motor](https://github.com/fegonzalez7/dynamixel_one_motor.git). Este nuevo Script lleva como nombre [CP_Lab4.py](https://github.com/Danacruzrui/Lab4_Cinematica_Directa-PhantomX/blob/8ec12ad38b18fb7f0409b6129dc0f76efed332bb/dynamixel_one_motor-master/scripts/CP_Lab4.py) , en él se genera una comunicación activa desde la terminal hasta el robot, especificamente hasta cada articulación (motor) que lo componen, para el caso del pincher se trata de 4 articulaciones rotacionales y un motor que controla el movimiento de la herramienta.
+  En terminos generales se puede identificar la siguiente estrucutura: 
+  * Importar librerias y paquetes necesarios
+  * Definición de funciones suscribirse a lo topicos del robot 
+  * Definición de funciones publicar a lo topicos del robot 
+  * *  Print del menu en consola 
+  * * Se asocian los valores del vector a los valores articulares 
+  * * Definición de valores articulares a publicar (según el numero seleccionado 1-5)
+  * * Publicar topicos 
+  * * Con el numero 0 se llaman a las funciones para suscribir e inicia la recepción de posición del robot 
   
   
   
