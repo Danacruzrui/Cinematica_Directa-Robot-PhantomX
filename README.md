@@ -83,12 +83,12 @@ xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
   * Importar librerias y paquetes necesarios
   * Definición de funciones suscribirse a lo topicos del robot 
   * Definición de funciones publicar a lo topicos del robot 
-  * *  Print del menu en consola 
-  * * Se asocian los valores del vector a los valores articulares 
-  * * Definición de valores articulares a publicar (según el numero seleccionado 1-5)
-  * * Publicar topicos 
-  * * Con el numero 0 se llaman a las funciones para suscribir e inicia la recepción de posición del robot 
-  
+    * *  Print del menu en consola 
+    * * Se asocian los valores del vector a los valores articulares 
+    * * Definición de valores articulares a publicar (según el numero seleccionado 1-5)
+    * * Publicar topicos 
+    * * Con el numero 0 se llaman a las funciones para suscribir e inicia la recepción de posición del robot 
+
   
   
 ```python
