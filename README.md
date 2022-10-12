@@ -80,6 +80,13 @@ xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
 ## Python
 
 ```python
+def callback(data):
+    rospy.loginfo(data.position)
+
+def listener():
+    rospy.Subscriber("/dynamixel_workbench/joint_states", JointState, callback)
+    #rospy.spin()
+
 def joint_publisher():
     pub = rospy.Publisher('/joint_trajectory', JointTrajectory, queue_size=0)
     rospy.init_node('joint_publisher', anonymous=False)
@@ -124,4 +131,13 @@ Para ubicar el Robot en la posición deseada presione la tecla indicada seguida 
             pub.publish(state)            
             print('Posición 1: HOME')
             rospy.sleep(1)
+            
+               if key == '0':
+           listener()
+
+        if __name__ == '__main__':
+            try:
+                joint_publisher()
+            except rospy.ROSInterruptException:
+                pass
       ```
