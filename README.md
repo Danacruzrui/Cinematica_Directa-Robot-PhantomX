@@ -59,6 +59,10 @@ Se realiza un cambio de pose a partir de la variación articular
 
 
 ## Matlab
+
+El codigo desarrollado en Matlab permite crear un robot a partir de los parametros DH utilizando el toolbox de PeterCorke, para el caso del Phantom X se crean cuatro articulaciones rotaciones, por lo cual las variables articulares son asignadas a tetha. 
+Una vez se crea el robot, se establece un offset en la segunda articualción para que las posiciones de HOME coincidan en la simulación y en el modelo real, finalmente se le asigna a cada articulación un valor de rotación acorde al ejercicio, esto se puede observar en la sección anterior de este repositorio.
+
 ```matlab
 syms q1 q2 q3 q4 ; 
 tetha= [q1, q2, q3, q4]; d=[42,0,0,0];
