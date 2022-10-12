@@ -14,6 +14,8 @@ Se trata de un brazo robotico con cinco actuadores que permiten el movimiento de
 
 ### Diagrama (sistemas de referencia) 
 
+<p align="center"><img height=300 src="./Multimedia_lab4/DH.jpeg" alt="Menu" /></p>
+
 ### Parámetros Denavit-Hartenberg (DH) 
 <div align="center">
 
