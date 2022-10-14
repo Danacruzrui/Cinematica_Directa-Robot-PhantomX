@@ -93,8 +93,10 @@ xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
   
   
 ```python
+
 def callback(data):
-    rospy.loginfo(data.position)
+    print (f"Joint1: {round(math.degrees(data.position[0]),2)} Joint2: {round(math.degrees(data.position[1]),2)} Joint3: {round(math.degrees(data.position[2]),2)} Joint4: {round(math.degrees(data.position[3]),2)} Joint5: {round(math.degrees(data.position[4]),2)}")
+    rospy.sleep(3)
 
 def listener():
     rospy.Subscriber("/dynamixel_workbench/joint_states", JointState, callback)
