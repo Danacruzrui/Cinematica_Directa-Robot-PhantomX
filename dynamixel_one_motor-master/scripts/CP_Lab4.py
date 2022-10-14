@@ -8,7 +8,9 @@ from pynput.keyboard import Key, Listener, KeyCode  # keyboard input
 
 
 def callback(data):
-    rospy.loginfo(data.position)
+    print (f"Joint1: {round(math.degrees(data.position[0]),2)} Joint2: {round(math.degrees(data.position[1]),2)} Joint3: {round(math.degrees(data.position[2]),2)} Joint4: {round(math.degrees(data.position[3]),2)} Joint5: {round(math.degrees(data.position[4]),2)}")
+    rospy.sleep(3)
+            
 
 def listener():
     rospy.Subscriber("/dynamixel_workbench/joint_states", JointState, callback)
@@ -18,10 +20,6 @@ def joint_publisher():
     pub = rospy.Publisher('/joint_trajectory', JointTrajectory, queue_size=0)
     rospy.init_node('joint_publisher', anonymous=False)
     
-#(-0.2914559245109558, 2.229382038116455, -2.56685733795166, -1.3550143241882324, 0.34258854389190674)
-#(-0.3, 2.2 , -2.5 , -1.3, 0.3)
-#(-0.29656916856765747, 2.1424567699432373, -2.4185729026794434, -1.324334740638733, 0.34258854389190674)
-
     # Print de comandos
     welcome = """\n 
                    ~~~~~~~ Lab. 4 - Cinematica Directa - Phantom X - ROS ~~~~~~~
@@ -91,7 +89,7 @@ Para ubicar el Robot en la posición deseada presione la tecla indicada seguida 
             point.time_from_start = rospy.Duration(0.5)
             state.points.append(point)
             pub.publish(state)
-            print('Posición 2: 30,-30, 30, -30, 0.')
+            print('Posición 3: 30,-30, 30, -30, 0.')
             rospy.sleep(1)
 
         if key == '4':
@@ -106,7 +104,7 @@ Para ubicar el Robot en la posición deseada presione la tecla indicada seguida 
             point.time_from_start = rospy.Duration(0.5)
             state.points.append(point)
             pub.publish(state)
-            print('Posición 2: -90, 15, -55, 17, 0')
+            print('Posición 4: -90, 15, -55, 17, 0')
             rospy.sleep(1)
 
         if key == '5':
@@ -123,7 +121,7 @@ Para ubicar el Robot en la posición deseada presione la tecla indicada seguida 
             point.time_from_start = rospy.Duration(0.5)
             state.points.append(point)
             pub.publish(state)
-            print('Posición 2: -90, 45, -55, 45, 10')
+            print('Posición 5: -90, 45, -55, 45, 10')
             rospy.sleep(1)
 
         if key == '9':
