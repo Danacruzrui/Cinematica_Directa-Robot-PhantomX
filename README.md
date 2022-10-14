@@ -82,6 +82,7 @@ xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
   En terminos generales se puede identificar la siguiente estrucutura: 
   * Importar librerias y paquetes necesarios
   * Definición de funciones suscribirse a lo topicos del robot 
+    *Accede a cada una de los valores articulares y se realiza la conversión rad-deg 
   * Definición de funciones publicar a lo topicos del robot 
     * Print del menu en consola 
     * Se asocian los valores del vector a los valores articulares 
