@@ -80,7 +80,8 @@ xlim([-200 300]);ylim([-200 300]);zlim([-50 400]); view([130 30]);
 ## Python
 
 <p align="center"><img height=300 src="./Multimedia_lab4/Consola.png" alt="Menu" /></p>
-  Para lograr manipular el Robot Phincher, se desarrolla un script en python basado en los scripts contenidos en el repositorio de Felipe Gonzalez [dynamixel_one_motor](https://github.com/fegonzalez7/dynamixel_one_motor.git). Este nuevo Script lleva como nombre [CP_Lab4.py](https://github.com/Danacruzrui/Lab4_Cinematica_Directa-PhantomX/blob/8ec12ad38b18fb7f0409b6129dc0f76efed332bb/dynamixel_one_motor-master/scripts/CP_Lab4.py) , en él se genera una comunicación activa desde la terminal hasta el robot, especificamente hasta cada articulación (motor) que lo componen, para el caso del pincher se trata de 4 articulaciones rotacionales y un motor que controla el movimiento de la herramienta.
+
+Para lograr manipular el Robot Phincher, se desarrolla un script en python basado en los scripts contenidos en el repositorio de Felipe Gonzalez [dynamixel_one_motor](https://github.com/fegonzalez7/dynamixel_one_motor.git). Este nuevo Script lleva como nombre [CP_Lab4.py](https://github.com/Danacruzrui/Lab4_Cinematica_Directa-PhantomX/blob/8ec12ad38b18fb7f0409b6129dc0f76efed332bb/dynamixel_one_motor-master/scripts/CP_Lab4.py) , en él se genera una comunicación activa desde la terminal hasta el robot, especificamente hasta cada articulación (motor) que lo componen, para el caso del pincher se trata de 4 articulaciones rotacionales y un motor que controla el movimiento de la herramienta.
   
   En terminos generales se puede identificar la siguiente estrucutura: 
   
