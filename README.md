@@ -87,7 +87,7 @@ Para lograr manipular el Robot Phincher, se desarrolla un script en python basad
   
   * Importar librerias y paquetes necesarios
   * Definición de funciones suscribirse a lo topicos del robot 
-    *Accede a cada una de los valores articulares y se realiza la conversión rad-deg 
+    * Accede a cada una de los valores articulares y se realiza la conversión rad-deg 
   * Definición de funciones publicar a lo topicos del robot 
     * Print del menu en consola 
     * Se asocian los valores del vector a los valores articulares 
